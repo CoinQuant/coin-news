@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "crawler": "^1.0.5"
+  }
+}
