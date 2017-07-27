@@ -1,4 +1,23 @@
 {
+  "name": "coin-news",
+  "description": "Collect notice and news from exchanges(yunbi&jubi&okcoin&huobi&bter&szzc)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperDBJ/coin-news.git"
+  },
+  "keywords": ["news", "exchange", "coin"],
+  "author": "weifeng.sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperDBJ/coin-news/issues"
+  },
+  "homepage": "https://github.com/SuperDBJ/coin-news#readme",
   "dependencies": {
     "lodash": "^4.17.4"
   },
