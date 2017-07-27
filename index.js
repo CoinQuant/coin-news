@@ -11,11 +11,12 @@ module.exports = class News extends EventEmitter {
 
   get current() {
     return {
-      jubi: 2709,
-      huobi: 619,
-      okcoin: 414,
+      jubi: 2733,
+      huobi: 623,
+      okcoin: 436,
       szzc: 1493636805000,
-      yunbi: 1500743863000
+      yunbi: 1500946964000,
+      bter: 16224
     };
   }
 
@@ -35,6 +36,10 @@ module.exports = class News extends EventEmitter {
         await newsAndNotice.start(this.current[platform_]);
         newsAndNotice.on('data', async data => {
           this.emit('data', data);
+        });
+
+        newsAndNotice.on('error', async err => {
+          console.log(err);
         });
       } catch (e) {}
     }
