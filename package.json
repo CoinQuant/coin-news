@@ -1,7 +1,7 @@
 {
   "name": "coin-news",
   "description": "Collect notice and news from exchanges(yunbi&jubi&okcoin&huobi&bter&szzc)",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "directories": {
     "example": "example",
