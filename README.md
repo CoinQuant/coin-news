@@ -1,5 +1,5 @@
 # Coin-News
-Collect notice and news from trade exchanges(yunbi&jubi&okcoin&huobi&bter&szzc)
+Collect notice and news from exchanges(yunbi&jubi&okcoin&huobi&bter&szzc)
 
 # Install
 npm i git+https://github.com/SuperDBJ/coin-news.git -S
