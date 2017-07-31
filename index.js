@@ -42,7 +42,13 @@ module.exports = class News extends EventEmitter {
       try {
         await newsAndNotice.start(this.current[platform_]);
         newsAndNotice.on('data', async data => {
-          this.emit('data', data);
+          if (_.has(data, 'current')) {
+            this.current[platform_] = data.current;
+            this.emit('data', data.notices);
+            return;
+          } else {
+            this.emit('data', data);
+          }
         });
 
         newsAndNotice.on('error', async err => {
