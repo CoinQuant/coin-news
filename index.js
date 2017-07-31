@@ -16,8 +16,13 @@ module.exports = class News extends EventEmitter {
       okcoin: 436,
       szzc: 1493636805000,
       yunbi: 1500946964000,
-      bter: 16224
+      bter: 16224,
+      people: 1501469700000
     };
+  }
+
+  get keywords() {
+    return ['比特币'];
   }
 
   set current(value) {
@@ -30,7 +35,7 @@ module.exports = class News extends EventEmitter {
     for (let i = 0; i < pfs.length; i++) {
       const platform_ = pfs[i];
       const NN = require(`./lib/${platform_}.js`);
-      const newsAndNotice = new NN(this._crawler);
+      const newsAndNotice = new NN(this._crawler, this.keywords);
 
       try {
         await newsAndNotice.start(this.current[platform_]);

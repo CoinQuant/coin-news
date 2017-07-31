@@ -11,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/SuperDBJ/coin-news.git"
   },
-  "keywords": ["news", "exchange", "coin"],
+  "keywords": [
+    "news",
+    "exchange",
+    "coin"
+  ],
   "author": "weifeng.sun",
   "license": "ISC",
   "bugs": {
@@ -19,7 +23,11 @@
   },
   "homepage": "https://github.com/SuperDBJ/coin-news#readme",
   "dependencies": {
-    "lodash": "^4.17.4"
+    "cheerio": "^1.0.0-rc.2",
+    "iconv": "^2.3.0",
+    "lodash": "^4.17.4",
+    "request-promise": "^4.2.1",
+    "xml2json": "^0.11.0"
   },
   "devDependencies": {
     "crawler": "^1.0.5"
