@@ -17,7 +17,9 @@ module.exports = class News extends EventEmitter {
       szzc: 1493636805000,
       yunbi: 1500946964000,
       bter: 16224,
-      people: 1501469700000
+      people: 1501469700000,
+      jinse: 0,
+      bitecoin: 0
     };
   }
 
