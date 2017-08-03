@@ -11,12 +11,12 @@ module.exports = class News extends EventEmitter {
 
   get current() {
     return {
-      jubi: 2733,
-      huobi: 623,
-      okcoin: 436,
-      szzc: 1493636805000,
-      yunbi: 1500946964000,
-      bter: 16224,
+      jubi: 2743,
+      huobi: 627,
+      okcoin: 453,
+      szzc: 1501737784000,
+      yunbi: 1501698715000,
+      bter: 16227,
       people: 1501469700000,
       jinse: 0,
       bitecoin: 0
