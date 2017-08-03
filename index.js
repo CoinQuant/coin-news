@@ -44,7 +44,7 @@ module.exports = class News extends EventEmitter {
         newsAndNotice.on('data', async data => {
           if (_.has(data, 'current')) {
             this.current[platform_] = data.current;
-            this.emit('data', data.notices);
+            this.emit('data', data.data);
             return;
           } else {
             this.emit('data', data);
