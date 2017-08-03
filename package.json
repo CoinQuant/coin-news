@@ -11,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/SuperDBJ/coin-news.git"
   },
-  "keywords": ["news", "exchange", "coin"],
+  "keywords": [
+    "news",
+    "exchange",
+    "coin"
+  ],
   "author": "weifeng.sun",
   "license": "ISC",
   "bugs": {
